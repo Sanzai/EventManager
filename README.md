@@ -3,7 +3,7 @@
 This script allows for comunication between objects without references
 
 
-#AddListener
+# AddListener
 
 //Activate a listener for a message without value to return
 EventManager.Instance.AddListener(string messageToListenFor, Action<object> callback)
@@ -11,7 +11,7 @@ EventManager.Instance.AddListener(string messageToListenFor, Action<object> call
 //Activate a listener for a message with a value to return
 EventManager.Instance.AddListener(string messageToListenFor, Function<object, object> callback)
   
-#RemoveListener
+# RemoveListener
 
 //Deactivate a listener for a message without value to return
 EventManager.Instance.RemoveListener(string messageToListenFor, Action<object> callback)
@@ -19,7 +19,7 @@ EventManager.Instance.RemoveListener(string messageToListenFor, Action<object> c
 //Deactivate a listener for a message with a value to return
 EventManager.Instance.RemoveListener(string messageToListenFor, Function<object, object> callback)
   
-#TriggerListener
+# TriggerListener
 
 //Send message to the EventManager to process. If the message contains "ReturnValue" the EventManager will send a value in return
 EventManager.Instance.TriggerListener(string messageToListenFor)
