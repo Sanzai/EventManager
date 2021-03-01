@@ -27,4 +27,4 @@ EventManager.Instance.RemoveListener(string messageToListenFor, Function<object,
 
 //Send message to the EventManager to process. If the message contains "ReturnValue" the EventManager will send a value in return
 
-EventManager.Instance.TriggerListener(string messageToListenFor)
+EventManager.Instance.TriggerListener(string messageToListenFor, object args)
